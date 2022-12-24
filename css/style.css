@@ -1,0 +1,698 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
+html {
+  font-family: Poppins, sans-serif;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+
+body {
+  background-color: wheat;
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  text-align: center;
+  margin: 0 auto;
+  padding: 10px
+}
+
+.btn {
+  display: block;
+  text-align: center;
+  padding: 20px;
+
+}
+
+
+.button {
+  margin-left: 10px;
+  border-radius: 10px;
+  background-color: teal;
+  box-shadow: 1px 1px 3px gray;
+  color: white;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  padding: 0.5em 0.7em;
+}
+
+
+.button:hover {
+  transform: scale(1.15);
+  transition: all 0.3s linear;
+
+}
+
+
+
+.stage {
+  height: 500px;
+  width: 500px;
+  animation: sky-color-change infinite 300s;
+  position: absolute;
+  margin: auto;
+  top: 70px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  overflow: hidden;
+  border: 2px solid black;
+}
+
+
+#Tan {
+  position: relative;
+  top: 150px;
+  left: 50px;
+}
+
+
+#dFace {
+  background-color: #283044;
+  height: 120px;
+  width: 150px;
+  border-radius: 40% 40% 50% 50%;
+  z-index: 2;
+  position: relative;
+}
+
+
+
+
+.eyebrow-l,
+.eyebrow-r {
+  background-color: #D9C9B1;
+  height: 12px;
+  width: 5px;
+  position: relative;
+}
+
+
+.eyebrow-l {
+  transform: rotate(110deg);
+  left: 45px;
+  bottom: 70px
+}
+
+.eyebrow-r {
+  transform: rotate(-110deg);
+  left: 105px;
+  bottom: 80px
+}
+
+.ear-l,
+.ear-r {
+  width: 20px;
+  height: 0;
+  border-bottom: 50px solid #364155;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-radius: 80% 0;
+  position: relative;
+
+}
+
+
+.ear-l {
+  bottom: 30px;
+  transform: rotate(-60deg);
+}
+
+.ear-r {
+  bottom: 75px;
+  left: 110px;
+  transform: rotate(-40deg);
+
+}
+
+
+.eye-r,
+.eye-l {
+  background-color: black;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  position: relative;
+
+
+}
+
+
+.eye-l {
+  bottom: 75px;
+  left: 30px;
+
+}
+
+
+.eye-r {
+  bottom: 105px;
+  left: 90px;
+}
+
+
+.inner_eye_l,
+.inner_eye_r {
+  background-color: white;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  position: relative;
+  top: 5px;
+  left: 5px;
+
+}
+
+
+.mussel {
+  background-color: #C4D0DD;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  position: relative;
+  bottom: 110px;
+  left: 55px;
+
+}
+
+.nose {
+  width: 0;
+  height: 0;
+  border-top: 8px solid black;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-radius: 5px 5px;
+  position: relative;
+  top: 10px;
+  left: 12px;
+}
+
+#mouthid {
+  background-color: #283044;
+  width: 20px;
+  height: 5px;
+  position: relative;
+  top: 12px;
+  left: 10px;
+  animation: pet-lip infinite 1s linear;
+
+}
+
+
+
+.tongue {
+  background-color: #ff1e1e;
+  width: 20px;
+  height: 0px;
+  position: relative;
+  border-radius: 0 0 10px 10px;
+  top: 10px;
+  left: 10px;
+  animation: tongue 2 0.3s linear;
+  animation-fill-mode: backwards;
+
+}
+
+
+.body {
+  background-color: #283044;
+  height: 110px;
+  width: 150px;
+  position: relative;
+  top: -20px;
+  border-radius: 50% 50% 30px 30px;
+
+}
+
+#paw-l,
+#paw-r {
+  background-color: #D9C9B1;
+  width: 20px;
+  height: 10px;
+  position: relative;
+  border-radius: 0 0 10px 10px;
+}
+
+#paw-l {
+  top: 100px;
+  left: 20px;
+
+}
+
+#paw-r {
+  top: 90px;
+  left: 100px;
+}
+
+.chest {
+
+  background-color: #e9e2d8;
+  border-radius: 50%;
+  width: 150px;
+  height: 170px;
+  position: relative;
+  bottom: 100px;
+  left: 0px;
+  z-index: 0;
+
+
+}
+
+#tail {
+  border-top: 100px solid #605E69;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-radius: 50% 10%;
+  width: 10px;
+  height: 0px;
+  position: relative;
+  bottom: 180px;
+  left: 140px;
+  transform: rotate(30deg);
+  z-index: -1;
+  animation: tail infinite 0.5s linear;
+  animation-fill-mode: backwards;
+}
+
+
+
+
+
+
+
+/* others*/
+
+#bowl::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: rgb(85, 66, 14);
+  position: absolute;
+  left: 30px;
+  bottom: 30px;
+  animation: food-move 1s linear;
+  animation-delay: 1.1s;
+  animation-fill-mode: forwards;
+}
+
+
+#bowl {
+  width: 70px;
+  height: 40px;
+  background: rgb(201, 24, 24);
+  border-radius: 5%;
+  position: relative;
+  left: 0px;
+  top: 0px;
+  display: none;
+}
+
+#bowl::after {
+  content: "";
+  width: 70px;
+  height: 40px;
+  border-radius: 50%;
+  background-image: url(../img/petfood.png);
+  background-size: cover;
+  background-repeat: repeat;
+  position: absolute;
+  bottom: 25px;
+  right: 0px;
+  z-index: -1;
+
+}
+
+
+
+#ball {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-image: url(../img/tennis.png);
+  background-position: center;
+  background-size: cover;
+  z-index: 10;
+  display: none;
+
+}
+
+
+#orb {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: red;
+  z-index: 10;
+  top: 50px;
+  left: 400px;
+  animation: orb-color-change infinite 300s;
+}
+
+
+/* Function 1. Play */
+
+
+@keyframes ball-move {
+
+  0% {
+    top: 100%;
+    left: 100%;
+  }
+
+  50% {
+    top: -170px;
+    left: 50%;
+  }
+
+  100% {
+    top: 0%;
+    left: 22%;
+  }
+}
+
+@keyframes p-head-move {
+
+  50% {
+    transform: scale(1.2);
+
+  }
+
+}
+
+
+@keyframes mouth-move {
+  50% {
+    transform: scaleY(7);
+  }
+
+}
+
+
+
+.p-head-move {
+  animation: p-head-move 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  animation-delay: 3.7s;
+  animation-fill-mode: forwards;
+
+}
+
+
+.ball-move {
+  animation: ball-move 4s cubic-bezier(0.45, 0.05, 0.55, 0.95);
+  animation-fill-mode: forwards;
+
+}
+
+.mouth-move {
+  animation: mouth-move 1s linear !important;
+  animation-delay: 3.5s !important;
+  animation-fill-mode: forwards !important;
+
+}
+
+/* Function 2. Feed */
+
+
+@keyframes body-move {
+
+
+  20% {
+    transform: translate(50px);
+  }
+
+  85% {
+    transform: translate(50px);
+  }
+
+
+}
+
+
+
+@keyframes feed-h {
+  0% {
+    transform: translate(20px);
+  }
+
+  50% {
+    transform: translate(20px, 20px);
+  }
+
+  75% {
+    transform: translate(50px, 50px);
+  }
+}
+
+
+@keyframes ear {
+  0% {
+
+    transform: rotate(-30deg);
+
+  }
+
+  25% {
+
+    transform: rotate(30deg);
+  }
+
+  75% {
+
+    transform: rotate(-30deg);
+
+  }
+}
+
+@keyframes bowl-move {
+  0% {
+    top: 0%;
+    left: 100%;
+    transform: scale(2);
+  }
+
+
+  100% {
+    left: 250px;
+    top: 100px;
+
+  }
+}
+
+@keyframes food-move {
+  0% {
+    top: 0%;
+    left: 0%;
+  }
+
+  50% {
+    left: 70px;
+    top: -50px;
+  }
+
+  100% {
+    left: 100px;
+    top: 50px;
+  }
+}
+
+.body-move {
+  animation: body-move 3s cubic-bezier(0.45, 0.05, 0.55, 0.95);
+  animation-fill-mode: forwards;
+
+}
+
+.face-move {
+  animation: feed-h 0.3s linear both 5;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+
+}
+
+.ear-move {
+  animation: ear 2 0.3s linear;
+
+}
+
+.bowl-move {
+  animation: bowl-move 1s cubic-bezier(0.45, 0.05, 0.55, 0.95);
+  animation-fill-mode: forwards;
+
+}
+
+
+
+
+/* Function 3. Pet */
+
+
+
+@keyframes head-move {
+  0% {
+    transform: translate(0);
+  }
+
+  25% {
+    transform: translate(-2px, 2px);
+  }
+
+  50% {
+    transform: translate(-2px, -2px);
+  }
+
+  75% {
+    transform: translate(2px, -2px);
+  }
+
+  100% {
+    transform: translate(0);
+  }
+}
+
+
+@keyframes tongue {
+  0% {
+    height: 0px;
+
+  }
+
+  25% {
+    height: 30px;
+    transform: scale(1.2);
+  }
+
+  75% {
+    height: 0px;
+
+  }
+}
+
+
+
+
+.head-move {
+  animation: head-move 0.3s linear both 5;
+  animation-fill-mode: forwards;
+
+}
+
+
+
+
+
+/* Function 4. Training */
+
+
+@keyframes paw-move {
+  50% {
+    transform: translateY(-10px);
+  }
+
+}
+
+
+.paw-move {
+  animation: paw-move 0.5s linear both 1;
+  animation-fill-mode: forwards;
+
+}
+
+
+
+
+
+/* Background*/
+
+@keyframes pet-lip {
+  50% {
+    transform: scale(1.2);
+  }
+}
+
+
+@keyframes sky-color-change {
+  0% {
+    background-color: #1c1341;
+  }
+
+  25% {
+    background-color: darkorange;
+  }
+
+  50% {
+    background-color: skyblue;
+  }
+
+  75% {
+    background-color: crimson;
+  }
+
+  100% {
+    background-color: #1c1341;
+  }
+}
+
+@keyframes orb-color-change {
+  0% {
+    background-color: yellow;
+    box-shadow: 0 0 70px 40px rgba(255, 251, 218, 0.6);
+
+  }
+
+  25% {
+    background-color: crimson;
+  }
+
+  50% {
+    background-color: red;
+    box-shadow: 0 0 40px 40px rgba(194, 157, 34, 0.6);
+
+  }
+
+  75% {
+    background-color: darkorange;
+  }
+
+  100% {
+    background-color: yellow;
+    box-shadow: 0 0 70px 40px rgba(255, 251, 218, 0.6);
+
+  }
+}
+
+/*other*/
+
+@keyframes lean {
+  0% {
+    transform: rotateX(30deg);
+  }
+
+
+}
+
+.lean {
+  animation: lean 0.5s linear both 1;
+  animation-delay: 3.7s;
+  animation-fill-mode: forwards;
+
+}
+
+@keyframes tail {
+  50% {
+    transform: rotate3d(0, 1, 2, 30deg);
+  }
+
+
+}
